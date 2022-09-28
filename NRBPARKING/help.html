@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="help.css">
+    <script src="help.js"></script>
+    <title>Help ?</title>
+</head>
+
+<body>
+    <nav>
+        <h1>
+            <ul>
+                <strong> <li><a href="prk.html">CARPARK</a></li></strong>
+                <div class="navleft">
+                    <li><a href="reg.html">Sign In</a></li>
+                    <li><a href="about.html">About Us</a></li>
+
+                </div>
+            </ul>
+        </h1>
+    </nav>
+    <h2>FAQs</h2>
+    <form>
+        <div>
+            <input type="text" class="form-control" id="question" name="question" placeholder="Ask a Question" />
+            <label for="name" placeholder="Ask a Question">Ask a Question?</label>
+        </div>
+    </form>
+
+    <p>FAQs</p>
+    <button class="collapsible">How Can I find Parking</button>
+    <div class="content">
+        <p>Go to Our Find Parking page and select where yould want to park and select your most preffered location.</p>
+    </div>
+    <button class="collapsible">How Do I pay for parking</button>
+    <div class="content">
+        <p>Select your most preffered location then you'll be redirected to the paying Page.</p>
+    </div>
+    <button class="collapsible">How can i find my towed car</button>
+    <div class="content">
+        <p>You'll have to pay for the parking fees first then you'll pick your car from the municipals garage</p>
+    </div>
+    <button class="collapsible">Can I pay with cash</button>
+    <div class="content">
+        <p>No.Alternatively you pay with a credit card or via Mpesa</p>
+    </div>
+
+    </div>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>

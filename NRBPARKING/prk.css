@@ -1,0 +1,126 @@
+body {
+    background-image: url(https://www.webershandwick.com/wp-content/uploads/2018/05/KenyaOfficeOpening.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 10;
+    padding: 10;
+}
+
+li {
+    display: inline;
+}
+
+.navleft {
+    float: right;
+}
+
+a {
+    padding: 8px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+.carparkintro {
+    width: 100%;
+    height: 500px;
+    padding-top: 100px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.button {
+    background-color: maroon;
+    font-size: 20px;
+    padding: 14px 40px;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: brown;
+    color: white;
+}
+
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    margin-left: 100px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+#myInput {
+    box-sizing: border-box;
+    background-image: url('searchicon.png');
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {
+    outline: 3px solid #ddd;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: brown;
+    color: white;
+    text-align: center;
+}
